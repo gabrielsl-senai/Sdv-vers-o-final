@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senhor dos ventos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-sistema">
+
+  
+  <div id="capa" class="capa-container">
+    <div class="capa-tela">
+      <h1>Senhor dos ventos</h1>
+      <button class="btn-entrar" onclick="abrir()">Entrar</button>
+    </div>
+  </div>
+
+  
+  <div id="principal" class="tela-lobby" style="display: none;">
+   
+      <header class="cabecalho">
+       <h1>O senhor dos ventos</h1>
+      </header> 
+    
+    <div class="layout-lobby">
+      
+      <aside class="menu-botoes">
+        <button class="btn mapa" onclick="trocarAba('secao-mapa')">Mapa</button>
+        <button class="btn lore" onclick="trocarAba('secao-lore')">Lore</button>
+        <button class="btn personagens" onclick="trocarAba('secao-personagens')">Personagens</button>
+        <button class="btn sistema" onclick="trocarAba('secao-sistema')">Sistema</button>
+      </aside>
+
+      
+      <main class="painel-conteudo">
+        
+       
+        <section id="secao-mapa" class="conteudo-aba">
+          <h1>Mundo de SdV</h1>
+          <img src="Imagens/mapa.png" alt="Mapa do mundo" style="max-width: 100%;">
+        </section>
+
+        
+        <section id="secao-lore" class="conteudo-aba" style="display: none;">
+          <h1>História</h1>
+          <p>
+            Há 167 anos, o Império Charniano e a Teocracia de Lailerenian formaram uma aliança.
+            Ambos os reinos vinham de lideranças problemáticas, o que acabou preocupando o pequeno reino de Rosia.
+            Embora grande, Rosia não se comparava aos seus vizinhos: era um amontoado de terras agrícolas sem um grande exército, 
+            já que em toda a sua história nunca haviam entrado em guerra.
+          </p>
+          <p>
+            Porém, seus vastos campos e minerais preciosos despertavam o interesse do mundo inteiro. Era questão de tempo até serem invadidos.
+            Como mecanismo de defesa, Rosia construiu muros enormes e seu mago mais forte (Sauruan) disparou inúmeras bolas de fogo contra seus oponentes.
+            Assim a guerra estourou; a destruição e a miséria fortaleceram a magia sombria, emergindo o mundo em trevas...
+          </p>
+        </section>
+
+        
+        <section id="secao-personagens" class="conteudo-aba" style="display: none;">
+          <h1>Personagens</h1>
+          
+          <div class="card-personagem">
+            <p><strong>Sisifo:</strong> Guerreiro impetuoso com a força de 10 homens, é um berserker especialista em combate corpo a corpo.</p>
+            <img src="Imagens/Sisifo.png" alt="Sisifo" style="max-width: 200px;">
+          </div>
+
+          <div class="card-personagem">
+            <p><strong>Raskol:</strong> Jovem criado nos subúrbios e conhecido como "Mãos de Pena". É um ladino habilidoso, embora pouco carismático.</p>
+            <img src="Imagens/Raskol.png" alt="Raskol" style="max-width: 200px;">
+          </div>
+
+          <div class="card-personagem">
+            <p><strong>Asmode:</strong> Aspirante a mago nascido em Lailerenian (onde a magia é proibida). Fugiu para Rosia para praticar seu ocultismo.</p>
+            <img src="Imagens/Asmode.png" alt="Asmode" style="max-width: 200px;">
+          </div>
+        </section>
+
+        
+        <section id="secao-sistema" class="conteudo-aba" style="display: none;">
+          <h1>Sistema</h1>
+          <h2>Regras Principais</h2>
+          <p><strong>Mecânica de Testes:</strong> Role 1d20 + Atributo Relacionado.<br>
+          Dificuldade Padrão (CD): Fácil (10), Média (15), Difícil (20).</p>
+          
+          <h2>Combate em 3 Passos</h2>
+          <p><strong>1. Iniciativa:</strong> 1d20 + AGI (maior valor age primeiro).</p>
+          <p><strong>2. Ataque:</strong> 1d20 + FOR (ou AGI para armas leves).<br>
+          A Defesa do alvo é fixa: 10 + AGI.</p>
+          <p><strong>3. Dano:</strong></p>
+          <ul>
+            <li>Espada: 1d8 + Força</li>
+            <li>Adaga: 1d6 + Agilidade</li>
+            <li>Magia: 1d10 + Mente (Custa 2 PMs)</li>
+          </ul>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
