@@ -1,3 +1,13 @@
+:root{
+  --cor-texto-mdcl:#000000;
+  --cor-texto-mdes: #ffffff;
+  --cor-fundo-escuro: #202020;
+  --cor-fundo-claro:#fefefe;
+  --cor-cabeçalho-: rgba(255, 255, 255, 0.05);
+  --cor-borda-cabeçalho: rgba(255, 255, 255, 0.1); 
+  --cor-botão-entrar: #333333;
+  --cor-sombra: rgba(0, 0, 0, 0.2);
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +15,10 @@
 }
 
 body.pagina-sistema {
-  background-color: #202020;
+  background-color: var( --cor-fundo-escuro);
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  color: #ffffff;
-  
-  
+  color: var(--cor-texto-mdes);
   display: block; 
 }
 
@@ -22,13 +30,11 @@ header.cabecalho {
   width: 100%;
   height: 90px; 
   
-  background: rgba(255, 255, 255, 0.05); 
+  background:var(--cor-cabeçalho);
   backdrop-filter: blur(12px);         
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  border-bottom: 1px solid var(--cor-borda-cabeçalho);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-  
- 
   display: flex;
   align-items: center;  
   padding: 0 40px;       
@@ -37,7 +43,7 @@ header.cabecalho {
 header.cabecalho h1 {
   font-size: 24px;
   font-weight: normal;
-  color: #ffffff;
+  color:var(--cor-texto-mdes);
 }
 
 
@@ -50,7 +56,7 @@ header.cabecalho h1 {
 }
 
 .capa-tela {
-  background: rgba(255, 255, 255, 0.05);
+  background:var(--cor-borda-cabeçalho);
   padding: 60px 80px;
   border-radius: 16px;
   backdrop-filter: blur(12px);
@@ -100,7 +106,7 @@ header.cabecalho h1 {
 
 .btn {
   background: rgba(255, 255, 255, 0.068);
-  color: rgb(255, 255, 255);
+  color: var(--cor-texto-mdes);
   border-radius: 12px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);

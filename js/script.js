@@ -15,3 +15,7 @@ const secaoAtiva = document.getElementById(idSecao);
     secaoAtiva.style.display = 'block';
   }
 }
+
+function TrocarModo(){
+  
+}
