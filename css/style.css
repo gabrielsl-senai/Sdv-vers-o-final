@@ -7,6 +7,7 @@
   --cor-borda-cabeçalho: rgba(255, 255, 255, 0.1); 
   --cor-botão-entrar: #333333;
   --cor-sombra: rgba(0, 0, 0, 0.2);
+  --cor-btns-mdes: rgba(255, 255, 255, 0.068);
 }
 * {
   margin: 0;
@@ -105,7 +106,7 @@ header.cabecalho h1 {
 }
 
 .btn {
-  background: rgba(255, 255, 255, 0.068);
+  background: var(--cor-btns-mdes);
   color: var(--cor-texto-mdes);
   border-radius: 12px;
   backdrop-filter: blur(12px);
@@ -124,23 +125,23 @@ header.cabecalho h1 {
 }
 
 .btn:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--cor-borda-cabeçalho);
   transform: scale(1.02);
 }
 
 
 .painel-conteudo {
   flex: 1;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--cor-btns-mdes);
   padding: 30px;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--cor-borda-cabeçalho);
 }
 
 .conteudo-aba h1 {
   font-size: 28px;
   margin-bottom: 20px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid var(--cor-borda-cabeçalho);
   padding-bottom: 10px;
 }
 
@@ -163,6 +164,6 @@ header.cabecalho h1 {
 
 .card-personagem {
   margin-bottom: 25px;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid var(--cor-borda-cabeçalho);
   padding-bottom: 15px;
 }
