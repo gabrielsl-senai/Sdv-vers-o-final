@@ -16,6 +16,7 @@ const secaoAtiva = document.getElementById(idSecao);
   }
 }
 
-function TrocarModo(){
-  
-}
+const btnTrocarModo = document.getElementById('TrocarModo');
+btnTrocarModo.addEventListener('click', () => {
+  document.body.classList.toggle('tema-claro');
+});
