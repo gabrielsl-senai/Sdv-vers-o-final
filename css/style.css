@@ -192,3 +192,11 @@ header.cabecalho button{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   cursor: pointer;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+  padding: 3px;
+  color: var(--cor-texto);
+}
