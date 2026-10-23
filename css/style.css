@@ -7,14 +7,45 @@
   --cor-sombra: rgba(0, 0, 0, 0.2);
   --cor-btns: rgba(255, 255, 255, 0.068);
 }
+
+body.tema-escuro{
+  --cor-texto: #ffffff;
+  --cor-fundo: #202020;
+  --cor-cabecalho: rgba(255, 255, 255, 0.068);
+  --cor-borda-cabeçalho: rgba(255, 255, 255, 0.1); 
+  --cor-botão-entrar: #333333;
+  --cor-sombra: rgba(0, 0, 0, 0.2);
+  --cor-btns: rgba(255, 255, 255, 0.068);
+}
+
 body.tema-claro{
   --cor-texto:#000000;
   --cor-fundo:#fefefe;
   --cor-cabecalho: rgba(214, 214, 214, 0.724);
-  --cor-borda-cabecalho: rgba(0, 0, 0, 0.1); 
+  --cor-borda-cabeçalho: rgba(175, 175, 175, 0.623); 
   --cor-botao-entrar: #f0f0f0;
   --cor-sombra: rgba(0, 0, 0, 0.1);
   --cor-btns: rgba(214, 214, 214, 0.724);
+}
+
+body.tema-índigo{
+ --cor-texto: #ffffff;
+  --cor-fundo: #2E2B6F;
+  --cor-cabecalho: #6163C0 ;
+  --cor-borda-cabeçalho: rgba(255, 255, 255, 0.377); 
+  --cor-botão-entrar: #333333;
+  --cor-sombra: rgba(0, 0, 0, 0.2);
+  --cor-btns: #6163C0;
+}
+
+body.tema-lilás{
+   --cor-texto: #000000;
+  --cor-fundo: #c6bfff;
+  --cor-cabecalho: #e0dcff;
+  --cor-borda-cabeçalho: rgba(0, 0, 0, 0.247); 
+  --cor-botão-entrar: #333333;
+  --cor-sombra: rgba(0, 0, 0, 0.2);
+  --cor-btns: #e0dcff;
 }
 * {
   margin: 0;
@@ -33,6 +64,7 @@ body.pagina-sistema {
 
   
 header.cabecalho {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -45,17 +77,10 @@ header.cabecalho {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
   display: flex;
   align-items: center;  
-  justify-content: space-between;
-  padding: 0 40px;       
+  padding: 0 40px; 
+  justify-content: end ;
+  gap: 15px;
 }
-
-header.cabecalho h1 {
-  font-size: 25px;
-  font-weight: normal;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:var(--cor-texto-mdes);
-}
-
 
 .capa-container {
   display: flex;
@@ -178,8 +203,6 @@ header.cabecalho h1 {
 }
 
 header.cabecalho button{
-  background: var(--cor-btns);
-  color: var(--cor-texto);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -193,6 +216,22 @@ header.cabecalho button{
   cursor: pointer;
 }
 
+#ModoEscuro{
+  background-color:#202020 ;
+  color:#ffffff ;
+}
+#ModoClaro{
+  background-color: #ffffff;
+  color: #000000;
+}
+#ModoÍndigo{
+  background-color: #2E2B6F;
+  color: #fefefe;
+}
+#ModoLilás{
+  background-color: #c6bfff;
+  color:#000000;
+}
 footer {
   position: fixed;
   bottom: 0;

@@ -15,8 +15,18 @@ const secaoAtiva = document.getElementById(idSecao);
     secaoAtiva.style.display = 'block';
   }
 }
+const btnModoClaro = document.getElementById('ModoClaro');
+const btnModoÍndigo = document.getElementById('ModoÍndigo');
+const btnModoLilás = document.getElementById('ModoLilás');
+const btnModoEscuro = document.getElementById('ModoEscuro');
 
-const btnTrocarModo = document.getElementById('TrocarModo');
-btnTrocarModo.addEventListener('click', () => {
-  document.body.classList.toggle('tema-claro');
-});
+const todosOsTemas = ['tema-claro', 'tema-índigo', 'tema-lilás','tema-escuro'];
+
+function mudarTema(temaNovo) {
+   document.body.classList.remove(...todosOsTemas);
+  document.body.classList.add(temaNovo);
+}
+btnModoClaro.addEventListener('click', () => mudarTema('tema-claro'));
+btnModoÍndigo.addEventListener('click', () => mudarTema('tema-índigo'));
+btnModoLilás.addEventListener('click', () => mudarTema('tema-lilás'));
+btnModoEscuro.addEventListener('click',() => mudarTema('tema-escuro'))
